@@ -4,12 +4,6 @@
 
 > Simple GUI password generator using Tkinter
 
-## Install
-
-```sh
-python main.py
-```
-
 ## Usage
 
 ```sh
