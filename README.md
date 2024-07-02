@@ -2,7 +2,7 @@
 <p>
 </p>
 
-> Simple GUI password generator using Tkinter
+> Simple GUI password generator using Python and Tkinter
 
 ## Usage
 
