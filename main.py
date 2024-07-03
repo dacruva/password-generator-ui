@@ -10,8 +10,8 @@ symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+', '-', '_', '~', '.']
 
 
 def password_generator():
-    password = ""
-    password_list = []
+    # password = ""
+    # password_list = []
     # for letter in range(1, nr_letters + 1):
     #     password_list.append(random.choice(letters))
     password_letters = [choice(letters) for _ in range(randint(8, 10))]
@@ -33,11 +33,12 @@ def save2file():
     password = password_result_entry.get()
 
     if not website or not password:
-        messagebox.showwarning(0, "Please don't leave any fields empty")
+        messagebox.showwarning("No empty", "Please don't leave any fields empty")
 
     else:
         is_ok = messagebox.askokcancel(title=website, message=f"these are the details entered: \n"
-                                                      f"Email: {email} \nPassword: {password}\n Is it ok to save?")
+                                                              f"Email: {email} \nPassword: {password}\n"
+                                                              f" Is it ok to save?")
 
         if is_ok:
             with open("supersecrets.txt", "a") as file:
